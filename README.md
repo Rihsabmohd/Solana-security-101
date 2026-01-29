@@ -6,6 +6,21 @@ Because **small mistakes in account handling, authority checks, and CPI usage ca
 This repository is an **educational security reference** for Solana developers.  
 It focuses on **common, real-world vulnerability patterns**, showing how they occur and how to fix them correctly.
 
+# Prerequisites
+
+This repository focuses on Solana security patterns, not beginner Solana development. To follow along comfortably, you should have:
+
+Basic experience writing Solana programs in Rust
+
+A working understanding of the Solana account model (accounts, ownership, signers, PDAs)
+
+Familiarity with Rust fundamentals and error handling
+
+Prior exposure to Anchor or native Solana programs (helpful, but not required)
+
+You do not need prior auditing or security experience.
+The examples are designed to build security intuition through practical, real-world patterns.
+
 ---
 
 ## Why Solana Security Is Different
