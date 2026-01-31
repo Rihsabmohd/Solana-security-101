@@ -124,10 +124,38 @@ This makes Pinocchio:
 
 
 ---
+## A brief Run through of the examples 
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/e9b5298bfebc456e8b71fb342298f8ea" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 
 ## Repository Structure
 
 Each vulnerability is isolated and easy to explore:
 
-\
-├── reinitialization_state_corruption/
+
+Attack Example/
+├── README.md                  # Explanation of the attack
+├── Programs/
+│   ├── MainExample/
+│   │   ├── src/
+│   │   │   └── lib.rs         # Vulnerable implementation
+│   │   └── Cargo.toml
+│   ├── MainExample-Fixed/
+│   │   ├── src/
+│   │   │   └── lib.rs         # Fixed implementation
+│   │   ├── tests/
+│   │   │   └── main_example_fixed.ts  # Automated tests for fixed version
+│   │   └── Cargo.toml
+└── README.md                   
+
+```
+
+### Notes
+
+- **Attack Example/README.md** → Explains the vulnerability (e.g., Confused Deputy, CPI issues).
+- **Programs/MainExample/src/lib.rs** → Original vulnerable smart contract code.
+- **Programs/MainExample-Fixed/src/lib.rs** → Secure/fixed version of the contract.
+- **Programs/MainExample-Fixed/tests/** → Automated test scripts validating fixes.
+
+---
+
