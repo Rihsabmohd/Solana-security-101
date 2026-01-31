@@ -132,13 +132,14 @@ This repository includes a short video walkthrough explaining:
 - The secure fix
 
 👉 **Watch here:**  
-    <a href="https://www.loom.com/share/e9b5298bfebc456e8b71fb342298f8ea">
+    <div>
+    <a href="https://www.loom.com/share/9eb7ff84681541478e859c1e01cee23d">
       <p>Videos | Library | Loom - 31 January 2026 - Watch Video</p>
     </a>
-    <a href="https://www.loom.com/share/e9b5298bfebc456e8b71fb342298f8ea">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/e9b5298bfebc456e8b71fb342298f8ea-5bbf064e47dbaaad-full-play.gif#t=0.1">
+    <a href="https://www.loom.com/share/9eb7ff84681541478e859c1e01cee23d">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/9eb7ff84681541478e859c1e01cee23d-4ce99d26ab7ba2f0-full-play.gif#t=0.1">
     </a>
-  </div>)
+  </div>
 
 
 ## Repository Structure
