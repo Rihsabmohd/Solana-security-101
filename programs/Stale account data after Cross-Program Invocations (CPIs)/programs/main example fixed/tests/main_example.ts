@@ -143,16 +143,17 @@ describe("exercise_10", () => {
     console.log(`   Escrow ATA: ${escrowTokenAccount}`);
   });
 
-  it("VULNERABLE: purchase_nft fails due to stale data", async () => {
-    console.log("🚨 Testing vulnerable purchase function...");
+  it("FIXED: purchase_nft_vulnerable now succeeds with fresh data", async () => {
+    console.log("✅ Testing fixed purchase function...");
 
     let foundTransferAmountMismatch = false;
     let txSignature: string | null = null;
     let allLogs: string[] = [];
+    let transactionSucceeded = false;
 
     try {
       txSignature = await program.methods
-        .purchaseNft()
+        .purchaseNftVulnerable()
         .accounts({
           listing: listingPda,
           buyerTokenAccount: buyerTokenAccount,
@@ -167,6 +168,7 @@ describe("exercise_10", () => {
         });
 
       console.log("✅ Transaction succeeded with signature:", txSignature);
+      transactionSucceeded = true;
 
     } catch (error: any) {
       console.log("❌ Transaction failed with error");
@@ -211,13 +213,16 @@ describe("exercise_10", () => {
     }
     console.log("==================\n");
 
-    // Test passes if we found the TransferAmountMismatch message
-    if (foundTransferAmountMismatch) {
-      console.log("✅ VULNERABILITY SUCCESSFULLY DEMONSTRATED!");
-      console.log("   Found expected 'TransferAmountMismatch' message in logs");
-      expect(foundTransferAmountMismatch).to.be.true;
+    // Test passes if transaction succeeded AND no TransferAmountMismatch was found
+    if (transactionSucceeded && !foundTransferAmountMismatch) {
+      console.log("✅ FIX SUCCESSFULLY VERIFIED!");
+      console.log("   Transaction succeeded without TransferAmountMismatch error");
+      expect(transactionSucceeded).to.be.true;
+      expect(foundTransferAmountMismatch).to.be.false;
+    } else if (foundTransferAmountMismatch) {
+      expect.fail("❌ TEST FAILED: Found unexpected 'TransferAmountMismatch' message - vulnerability still exists!");
     } else {
-      expect.fail("❌ TEST FAILED: Did not find 'TransferAmountMismatch' message in transaction logs");
+      expect.fail("❌ TEST FAILED: Transaction failed for reasons other than TransferAmountMismatch");
     }
   });
 });
