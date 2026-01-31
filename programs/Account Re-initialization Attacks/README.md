@@ -192,7 +192,3 @@ Using `Account<T>` restores  Ownership validation
 
 If an account can be initialized twice, it can be stolen.
 
-
-
-If you want the **next README** (authority checks, PDA collisions, CPI signer confusion, arithmetic overflow, etc.), just tell me which vulnerability you’re tackling next 🔐🚀
-```
