@@ -164,12 +164,3 @@ Attack Example/
 
 ```
 
-### Notes
-
-- **Attack Example/README.md** → Explains the vulnerability (e.g., Confused Deputy, CPI issues).
-- **Programs/MainExample/src/lib.rs** → Original vulnerable smart contract code.
-- **Programs/MainExample-Fixed/src/lib.rs** → Secure/fixed version of the contract.
-- **Programs/MainExample-Fixed/tests/** → Automated test scripts validating fixes.
-
----
-
