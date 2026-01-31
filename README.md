@@ -124,8 +124,21 @@ This makes Pinocchio:
 
 
 ---
-## A brief Run through of the examples 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/e9b5298bfebc456e8b71fb342298f8ea" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+## ## 🎥 Video Walkthrough
+
+This repository includes a short video walkthrough explaining:
+- The vulnerability
+- How the exploit works
+- The secure fix
+
+👉 **Watch here:**  
+    <a href="https://www.loom.com/share/e9b5298bfebc456e8b71fb342298f8ea">
+      <p>Videos | Library | Loom - 31 January 2026 - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/e9b5298bfebc456e8b71fb342298f8ea">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/e9b5298bfebc456e8b71fb342298f8ea-5bbf064e47dbaaad-full-play.gif#t=0.1">
+    </a>
+  </div>)
 
 
 ## Repository Structure
